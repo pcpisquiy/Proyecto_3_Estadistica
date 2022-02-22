@@ -1,0 +1,23 @@
+{
+  "name": "proyecto3estadistica",
+  "version": "1.0.0",
+  "description": "Proyecto 3 de Estadistica ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pcpisquiy/Proyecto_3_Estadistica.git"
+  },
+  "author": "PCPP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pcpisquiy/Proyecto_3_Estadistica/issues"
+  },
+  "homepage": "https://github.com/pcpisquiy/Proyecto_3_Estadistica#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.0.0",
+    "normalize.css": "^8.0.1"
+  }
+}

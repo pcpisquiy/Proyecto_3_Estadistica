@@ -1,0 +1,44 @@
+* {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "BebasNeue-Regular";
+  src: url("../Fonts/bebas_neue/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: "coolvetica";
+  src: url("../Fonts/coolvetica/coolvetica_crammed_rg.ttf");
+}
+
+.Caratula {
+  height: 120vh;
+  width: 100vw;
+  background-image: url("../image/Caratula.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.ListaInformacion {
+  margin: 0;
+  list-style: none;
+  font-size: 6rem;
+  -webkit-text-stroke: 2px white;
+  color: black;
+  font-family: "coolvetica";
+}
+
+.Flecha_Down {
+  font-size: 8rem;
+}
+
+.navbar {
+  height: 75px;
+  background-color: black;
+  border-bottom-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+}
+/*# sourceMappingURL=Index.css.map */
