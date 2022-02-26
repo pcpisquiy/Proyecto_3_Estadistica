@@ -15,7 +15,7 @@
 .Caratula {
   height: 100vh;
   width: 100vw;
-  background-image: url("../image/Caratula.jpg");
+  background-image: url("../Image/Caratula.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
