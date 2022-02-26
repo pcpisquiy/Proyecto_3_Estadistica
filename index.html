@@ -9,28 +9,56 @@
     <link rel='stylesheet' href='./node_modules/normalize.css/normalize.css' />
     <link rel='stylesheet' type='text/css' media='screen' href='./Assets/CSS/Index.css' />
     <link rel='stylesheet' href='./node_modules/@fortawesome/fontawesome-free/css/all.min.css'>
+    <link rel="'stylesheet" href='./node_modules/animate.css/animate.css'>
 </head>
 <body>
     <div class="Caratula">
-            <p class="ListaInformacion__Item">Proyecto 3</p>
-            <p class="ListaInformacion__Item">Nombre: Pablo César Pisquiy Pacajá</p>
-            <p class="ListaInformacion__Item">Carné: 1168921</p>
-            <p class="ListaInformacion__Item">Curso: Probabilidad y estadística</p>
-            <p class="ListaInformacion__Item">Sección: 9</p>
-            <p class="ListaInformacion__Item">Fecha: 22/02/2022</p>
-        <div>
-            <i class="fa-solid fa-arrow-down Flecha_Down"></i>
-        </div>
+            <ul class="ListaInformacion">
+                <li class="ListaInformacion__Item">Proyecto 3</li>
+                <li class="ListaInformacion__Item">Nombre: Pablo César Pisquiy Pacajá</li>
+                <li class="ListaInformacion__Item">Carné: 1168921</li>
+                <li class="ListaInformacion__Item">Curso: Probabilidad y estadística</li>
+                <li class="ListaInformacion__Item">Sección: 9</li>
+                <li class="ListaInformacion__Item">Fecha: 22/02/2022</li>
+                <li class="ListaInformacion__Item"><a href="#glosario"><i id="arrow" class="animate__animated animate__heartBeat  fa-solid fa-arrow-down Flecha_Down"></i></a></li>
+            </ul>
     </div>
-    <nav class="navbar">
-        <ul>
-            <li>HOLA COMO ESTADÍSTICA</li>
-            <li>HOLA COMO ESTADÍSTICA</li>
-            <li>HOLA COMO ESTADÍSTICA</li>
-            <li>HOLA COMO ESTADÍSTICA</li>
-            <li>HOLA COMO ESTADÍSTICA</li>
+     <nav class="navbar" id="Menu">
+        <ul class="Nav_List">
+            <li class="Nav_List__Item">
+                <a class="Nav_List__Item" href="#">
+                    HOLA COMO ESTADÍSTICA
+                </a>
+            </li>
+            <li class="Nav_List__Item">
+                <a class="Nav_List__Item" href="#">
+                    HOLA COMO ESTADÍSTICA
+                </a>
+            </li>
+            <li class="Nav_List__Item">
+                <a class="Nav_List__Item" href="#">
+                    HOLA COMO ESTADÍSTICA
+                </a>
+            </li>
+            <li class="Nav_List__Item">
+                <a class="Nav_List__Item" href="#">
+                    HOLA COMO ESTADÍSTICA
+                </a>
+            </li>
+            <li class="Nav_List__Item">
+                <a class="Nav_List__Item" href="#">
+                    HOLA COMO ESTADÍSTICA
+                </a>
+            </li>
         </ul>
     </nav>
-</body>
+    <div id="glosario" style="height: 100vh; width: 100vw;">
 
+    </div>
+        <div id="glosario" style="height: 100vh; width: 100vw;">
+
+    </div>
+    <script src="./Assets/JS/Scroll/dist/vanillajs-scrollspy.js"></script>
+    <script src="./Assets/JS/index.js"></script>
+</body>
 </html>

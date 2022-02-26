@@ -13,32 +13,109 @@
 }
 
 .Caratula {
-  height: 120vh;
+  height: 100vh;
   width: 100vw;
   background-image: url("../image/Caratula.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  overflow-x: hidden;
   text-align: center;
 }
 
+.ListaInformacion {
+  list-style: none;
+  margin: 0;
+}
+
 .ListaInformacion__Item {
-  margin-top: 0;
-  font-size: 6rem;
+  margin: 2rem 0 2rem 0;
+  font-size: 3rem;
   -webkit-text-stroke: 2px white;
   color: black;
   font-family: "BebasNeue-Regular";
-  overflow-y: hidden;
+}
+
+.ListaInformacion__Item:first-child {
+  margin-top: 1rem;
+}
+
+.ListaInformacion__Item:nth-child(7) {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  margin-top: 0;
+  margin-bottom: 0;
+  opacity: 0.5;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slideFlecha;
+          animation-name: slideFlecha;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .Flecha_Down {
   font-size: 8rem;
 }
 
+@-webkit-keyframes slideFlecha {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes slideFlecha {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
 .navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
   height: 75px;
+  width: 100vw;
   background-color: black;
   border-bottom-left-radius: 4rem;
-  border-bottom-right-radius: 4rem;
+  border-bottom-right-radius: 3rem;
+}
+
+.Nav_List {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.Nav_List__Item {
+  overflow-y: hidden !important;
+  margin-left: 15px;
+  font-family: "coolvetica";
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
 }
 /*# sourceMappingURL=Index.css.map */
