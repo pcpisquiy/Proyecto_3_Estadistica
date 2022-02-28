@@ -1,3 +1,45 @@
-// @media only screen and (max-width: 922px)
-//     .ListaInformacion__Item
-//         margin: 0
+@media only screen and (max-width: 810px)
+    .menu__barras
+        display: block
+        cursor: pointer
+    .Nav_List
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        flex-direction: column
+        margin: 0
+        position: fixed
+        top: 0
+        width: 100%
+        height: 100%
+        background-image: linear-gradient(blue, skyblue)
+        right: -100%
+        text-align: center
+        transition: all 0.5s
+    .Nav_List__Item
+        overflow-y: hidden !important
+        margin-left: 0
+        margin-bottom: 2.5rem
+        font-family: $Textos
+        font-size: 5rem
+        color: white
+        text-decoration: none
+    .Nav_List__Item--close
+        display: inline-block
+        background-color: black
+        border-radius: 100%
+        position: absolute
+        top: 0
+        float: right
+        right: 0
+        margin: 20px 20px
+        padding: 5px 10px
+        font-family: $Textos
+        font-size: 1.5rem
+        color: white
+        list-style: none
+        cursor: pointer
+    .show
+        right: 0
+    .Flecha_Down
+        font-size: 15rem

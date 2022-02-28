@@ -10,55 +10,122 @@
     <link rel='stylesheet' type='text/css' media='screen' href='./Assets/CSS/Index.css' />
     <link rel='stylesheet' href='./node_modules/@fortawesome/fontawesome-free/css/all.min.css'>
     <link rel="'stylesheet" href='./node_modules/animate.css/animate.css'>
+    <link rel='stylesheet' href='./node_modules/aos/dist/aos.css'>
 </head>
+
 <body>
     <div class="Caratula">
-            <ul class="ListaInformacion">
-                <li class="ListaInformacion__Item">Proyecto 3</li>
-                <li class="ListaInformacion__Item">Nombre: Pablo César Pisquiy Pacajá</li>
-                <li class="ListaInformacion__Item">Carné: 1168921</li>
-                <li class="ListaInformacion__Item">Curso: Probabilidad y estadística</li>
-                <li class="ListaInformacion__Item">Sección: 9</li>
-                <li class="ListaInformacion__Item">Fecha: 22/02/2022</li>
-                <li class="ListaInformacion__Item"><a href="#glosario"><i id="arrow" class="animate__animated animate__heartBeat  fa-solid fa-arrow-down Flecha_Down"></i></a></li>
-            </ul>
-    </div>
-     <nav class="navbar" id="Menu">
-        <ul class="Nav_List">
-            <li class="Nav_List__Item">
-                <a class="Nav_List__Item" href="#">
-                    HOLA COMO ESTADÍSTICA
-                </a>
-            </li>
-            <li class="Nav_List__Item">
-                <a class="Nav_List__Item" href="#">
-                    HOLA COMO ESTADÍSTICA
-                </a>
-            </li>
-            <li class="Nav_List__Item">
-                <a class="Nav_List__Item" href="#">
-                    HOLA COMO ESTADÍSTICA
-                </a>
-            </li>
-            <li class="Nav_List__Item">
-                <a class="Nav_List__Item" href="#">
-                    HOLA COMO ESTADÍSTICA
-                </a>
-            </li>
-            <li class="Nav_List__Item">
-                <a class="Nav_List__Item" href="#">
-                    HOLA COMO ESTADÍSTICA
+        <ul class="ListaInformacion">
+            <li class="ListaInformacion__Item">Proyecto 3</li>
+            <li class="ListaInformacion__Item">Nombre: Pablo César Pisquiy Pacajá</li>
+            <li class="ListaInformacion__Item">Carné: 1168921</li>
+            <li class="ListaInformacion__Item">Curso: Probabilidad y estadística</li>
+            <li class="ListaInformacion__Item">Sección: 9</li>
+            <li class="ListaInformacion__Item">Fecha: 22/02/2022</li>
+            <li class="ListaInformacion__Item" id="arrow">
+                <a href="#Experimentos">
+                    <span class="animate__animated animate__heartBeat  fa-solid fa-arrow-down arrow Flecha_Down"></span>
                 </a>
             </li>
         </ul>
+    </div>
+    <nav class="navbar" id="navbar">
+        <label class="menu__barras" id="nav__menu--open">
+            <img src="./Assets/Image/barras.png" height="40" width="40" alt="barras">
+        </label>
+        <ul class="Nav_List" id="nav__menu">
+            <li class="Nav_List__Item">
+                <a class="Nav_List__Item" href="#Experimentos">
+                    Experimentos
+                </a>
+            </li>
+            <li class="Nav_List__Item">
+                <a class="Nav_List__Item" href="#Sucesos">
+                    Sucesos
+                </a>
+            </li>
+            <li class="Nav_List__Item">
+                <a class="Nav_List__Item" href="#Probabilidad">
+                    Probabilidad
+                </a>
+            </li>
+            <li class="Nav_List__Item">
+                <a class="Nav_List__Item" href="#Formulas">
+                    Formulas
+                </a>
+            </li>
+            <li class="Nav_List__Item--close" id="nav__menu--close"><i class="fas fa-times"></i></li>
+        </ul>
     </nav>
-    <div id="glosario" style="height: 100vh; width: 100vw;">
+    <div id="Experimentos" class="New__Secction" data-aos="fade-up">
+        <h2 class="Titulos">Experimentos</h2>
+        <section class="container">
+            <i class="fa-solid fa-arrow-right-long"></i>
+            <h3 class="Subtitulos">Determinista</h3>
+            <p class="Textos">
+                Es el que al realizar una prieba con determinadas conidciones asi como tambien realizarla por n veces se
+                obtiene un resultado igualitario para todas las pruebas realizadas.
+            </p>
+        </section>
+        <section class="container">
+            <i class="fa-solid fa-arrow-right-long"></i>
+            <h3 class="Subtitulos">Aleatorio</h3>
+            <p class="Textos">
+                Es el que al realizar una prueba con determinadas condiciones se obtienen distintos resultados.
+            </p>
+        </section>
+        <section class="container">
+            <i class="fa-solid fa-arrow-right-long"></i>
+            <h3 class="Subtitulos">Compuesto</h3>
+            <p class="Textos">
+                Es un experimento formado de varios experimentos simples.
+            </p>
+        </section>
+    </div>
+    <div id="Sucesos" class="New__Secction" data-aos="fade-up">
+        <h2 class="Titulos">Sucesos</h2>
+        <section class="container">
+            <i class="fa-solid fa-arrow-right-long"></i>
+            <h3 class="Subtitulos">Aleatorios</h3>
+            <p class="Textos">
+                La vida esta llena de estos sucesos, mucho de estos son sociologicos como por ejemplo los viajes, accidentes y números de personas que se matriculan.
+            </p>
+        </section>
+        <section class="container">
+            <i class="fa-solid fa-arrow-right-long"></i>
+            <h3 class="Subtitulos">Espacio Muestral</h3>
+            <p class="Textos">
+               Conjunto formado por los posibles resultados de un experimento, generalmente se le conoce como E.
+            </p>
+        </section>
 
     </div>
-        <div id="glosario" style="height: 100vh; width: 100vw;">
-
+    <div id="Probabilidad" class="New__Secction" data-aos="fade-up">
+        <h2 class="Titulos">Probabilidad</h2>
+        <section class="container">
+            <i class="fa-solid fa-arrow-right-long"></i>
+            <h3 class="Subtitulos">¿Que es probablidad?</h3>
+            <p class="Textos">
+                Mide la cantidad de veces en las que puede suceder un fenomeno para asi obtener un resultado en especifico.
+            </p>
+            <p class="Textos">
+                Cuando las condiciones son suficientemente estables se suele usar las físicas, matemáticas, estadísticas y más ciencias.
+            </p>
+        </section>
     </div>
-    <script src="./Assets/JS/Scroll/dist/vanillajs-scrollspy.js"></script>
+    <div id="Formulas" class="New__Secction" data-aos="fade-up">
+        <h2 class="Titulos">Formulas</h2>
+        <section class="container">
+            <i class="fa-solid fa-arrow-right-long"></i>
+            <h3 class="Subtitulos">Formulas de la probabilidad</h3>
+            <p class="Textos">
+                FA= <sup> Número de veces que aprece A </sup> / <sub> Número de veces que se realiza el experimento </sub> 
+            </p>
+        </section>
+    </div>
+    <script type="text/javascript" src="./node_modules/aos/dist/aos.js"></script>
+    <script src="./node_modules/vanillajs-scrollspy/dist/vanillajs-scrollspy.min.js"></script>
     <script src="./Assets/JS/index.js"></script>
 </body>
+
 </html>

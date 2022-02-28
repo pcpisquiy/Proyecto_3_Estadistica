@@ -2,6 +2,16 @@
   overflow-x: hidden;
 }
 
+.New__Secction {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  margin: 0 2.5rem;
+  overflow-y: hidden;
+}
+
 @font-face {
   font-family: "BebasNeue-Regular";
   src: url("../Fonts/bebas_neue/BebasNeue-Regular.ttf");
@@ -19,14 +29,17 @@
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  background-position: center;
 }
 
 .ListaInformacion {
   list-style: none;
+  overflow-y: hidden;
   margin: 0;
 }
 
 .ListaInformacion__Item {
+  overflow-y: hidden;
   margin: 2rem 0 2rem 0;
   font-size: 3rem;
   -webkit-text-stroke: 2px white;
@@ -94,7 +107,8 @@
   z-index: 1030;
   height: 75px;
   width: 100vw;
-  background-color: black;
+  background-image: -webkit-gradient(linear, left top, right top, from(#1038de), color-stop(47%, white), to(red));
+  background-image: linear-gradient(90deg, #1038de 0%, white 47%, red 100%);
   border-bottom-left-radius: 4rem;
   border-bottom-right-radius: 3rem;
 }
@@ -108,6 +122,7 @@
           justify-content: flex-end;
   margin: 0;
   margin-right: 15px;
+  padding-right: 5rem;
 }
 
 .Nav_List__Item {
@@ -117,5 +132,143 @@
   font-size: 3rem;
   color: white;
   text-decoration: none;
+}
+
+.menu__barras {
+  display: none;
+  float: right;
+  margin: 10px 20px;
+}
+
+.Nav_List__Item--close {
+  display: none;
+}
+
+#Experimentos {
+  padding-top: 75px;
+  background-image: url(../Image/Experimento.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fa-solid {
+  color: red;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+
+#Sucesos {
+  padding-top: 75px;
+  background-image: url(../Image/Sucesos.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#Probabilidad {
+  padding-top: 75px;
+  background-image: url(../Image/Probabilidad.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#Formulas {
+  padding-top: 75px;
+  background-image: url(../Image/Formulas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (max-width: 810px) {
+  .menu__barras {
+    display: block;
+    cursor: pointer;
+  }
+  .Nav_List {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(skyblue));
+    background-image: linear-gradient(blue, skyblue);
+    right: -100%;
+    text-align: center;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .Nav_List__Item {
+    overflow-y: hidden !important;
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+    font-family: "coolvetica";
+    font-size: 5rem;
+    color: white;
+    text-decoration: none;
+  }
+  .Nav_List__Item--close {
+    display: inline-block;
+    background-color: black;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    float: right;
+    right: 0;
+    margin: 20px 20px;
+    padding: 5px 10px;
+    font-family: "coolvetica";
+    font-size: 1.5rem;
+    color: white;
+    list-style: none;
+    cursor: pointer;
+  }
+  .show {
+    right: 0;
+  }
+  .Flecha_Down {
+    font-size: 15rem;
+  }
+}
+
+.Titulos {
+  text-align: center;
+  font-family: "BebasNeue-Regular";
+  font-size: 3rem;
+  color: black;
+  -webkit-text-stroke: 2px white;
+}
+
+.Subtitulos {
+  display: inline;
+  font-family: "BebasNeue-Regular";
+  font-size: 2rem;
+  color: black;
+  -webkit-text-stroke: 1px white;
+  text-decoration: underline;
+}
+
+.Textos {
+  overflow-y: hidden;
+  margin-top: 2px;
+  font-family: "coolvetica";
+  font-size: 2.5rem;
+  letter-spacing: 0.25rem;
+  text-align: center;
 }
 /*# sourceMappingURL=Index.css.map */
